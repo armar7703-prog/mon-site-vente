@@ -2,53 +2,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Activation Forfaits Internet Orange & MTN Cameroun</title>
+  <title>FastNet Cameroun – Forfaits Internet Orange & MTN</title>
+  <meta name="description" content="FastNet Cameroun : activation rapide de forfaits Internet Orange et MTN à prix réduit. Paiement Mobile Money et Orange Money." />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
-    header { background: linear-gradient(90deg, #ff7900, #ffcc00); color: white; padding: 25px; text-align: center; }
-    header h1 { margin: 0; font-size: 24px; }
-    section { padding: 20px; }
-    .operator { margin-bottom: 30px; }
-    .operator h2 { color: #333; }
-    .card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
-    .price { font-size: 18px; font-weight: bold; color: #0a7cff; }
-    .btn { display: inline-block; margin-top: 10px; background: #0a7cff; color: white; text-decoration: none; padding: 10px 15px; border-radius: 6px; }
-    footer { background: #222; color: #ccc; text-align: center; padding: 15px; font-size: 14px; }
+    :root{
+      --orange:#ff7900; --mtn:#ffcc00; --bg:#0c1022; --card:#151a3a; --txt:#eef1ff; --muted:#aab0ff; --wa:#25d366;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b0f2a,#0c1022);color:var(--txt)}
+    header{padding:28px 18px;text-align:center}
+    .logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px}
+    .logo span{font-size:28px}
+    header h1{margin:0;font-size:28px}
+    header p{margin:6px 0 0;color:var(--muted)}
+    .wrap{max-width:1100px;margin:auto;padding:18px}
+    .pay{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+    .pay span{background:#0f1533;border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;font-size:13px}
+    .ops{display:grid;gap:28px}
+    .op{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:18px}
+    .op h2{margin:0 0 12px;font-size:22px;display:flex;align-items:center;gap:10px}
+    .badge{padding:4px 10px;border-radius:999px;font-size:12px;color:#111;font-weight:800}
+    .promo{background:#ff3b3b;color:#fff}
+    .orange .badge{background:var(--orange)}
+    .mtn .badge{background:var(--mtn)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;position:relative}
+    .best{position:absolute;top:12px;right:12px;background:#00e5ff;color:#003;font-size:11px;font-weight:900;padding:4px 8px;border-radius:999px}
+    .card h3{margin:0;font-size:18px}
+    .price{font-size:24px;font-weight:900}
+    .orange .price{color:var(--orange)}
+    .mtn .price{color:var(--mtn)}
+    .muted{color:var(--muted);font-size:13px}
+    .cta{margin-top:auto}
+    .btn{display:block;text-align:center;text-decoration:none;background:var(--wa);color:#0b1b11;font-weight:900;padding:12px;border-radius:10px}
+    footer{padding:22px;text-align:center;color:var(--muted);font-size:14px}
   </style>
 </head>
-<body><header>
-  <h1>Activation de Forfaits Internet</h1>
-  <p>Orange & MTN Cameroun — Rapide • Fiable • Moins cher</p>
-</header><section>
-  <div class="operator">
-    <h2>📶 Orange Cameroun</h2><div class="card">
-  <p><strong>30 Go</strong> — Valable 30 jours</p>
-  <p class="price">2 500 FCFA</p>
-  <a class="btn" href="https://wa.me/237653450232">Activer sur WhatsApp</a>
-</div>
-
-<div class="card">
-  <p><strong>55 Go</strong> — Valable 2 mois</p>
-  <p class="price">2 500 FCFA</p>
-  <a class="btn" href="https://wa.me/237653450232">Activer sur WhatsApp</a>
-</div>
-
-  </div>  <div class="operator">
-    <h2>📡 MTN Cameroun</h2><div class="card">
-  <p><strong>25 Go</strong> — Valable 30 jours</p>
-  <p class="price">2 500 FCFA</p>
-  <a class="btn" href="https://wa.me/237653450232">Activer sur WhatsApp</a>
-</div>
-
-<div class="card">
-  <p><strong>Illimité Nuit</strong> — 30 jours</p>
-  <p class="price">1 500 FCFA</p>
-  <a class="btn" href="https://wa.me/237653450232">Activer sur WhatsApp</a>
-</div>
-
+<body>
+<header>
+  <div class="logo"><span>⚡</span><h1>FastNet Cameroun</h1></div>
+  <p>Forfaits Internet Orange & MTN • Activation rapide via WhatsApp</p>
+  <div class="pay">
+    <span>💳 MTN Mobile Money</span>
+    <span>🧡 Orange Money</span>
   </div>
-</section><footer>
-  <p>Activation instantanée • Paiement Mobile Money accepté</p>
-  <p>© 2026 — Service Forfaits Internet Cameroun</p>
-</footer></body>
-  </html>
+</header><main class="wrap">
+  <section class="ops"><!-- ORANGE -->
+<div class="op orange">
+  <h2>🟠 Orange Cameroun <span class="badge">OFFRES</span> <span class="badge promo">PROMO</span></h2>
+  <div class="grid">
+    <div class="card">
+      <span class="best">MEILLEURE OFFRE</span>
+      <h3>30 Go</h3>
+      <div class="price">2 000 FCFA</div>
+      <div class="muted">Valable 30 jours</div>
+      <div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%2030Go%20Orange">Activer sur WhatsApp</a></div>
+    </div>
+    <div class="card"><h3>55 Go</h3><div class="price">3 500 FCFA</div><div class="muted">Valable 2 mois</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%2055Go%20Orange">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>70 Go</h3><div class="price">5 000 FCFA</div><div class="muted">Valable 2 mois</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%2070Go%20Orange">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>Illimité 1 mois</h3><div class="price">5 000 FCFA</div><div class="muted">Internet illimité</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%20illimit%C3%A9%201%20mois%20Orange">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>Illimité 2 mois</h3><div class="price">8 000 FCFA</div><div class="muted">Internet illimité</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%20illimit%C3%A9%202%20mois%20Orange">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>Illimité 3 mois</h3><div class="price">12 000 FCFA</div><div class="muted">Internet illimité</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%20illimit%C3%A9%203%20mois%20Orange">Activer sur WhatsApp</a></div></div>
+  </div>
+</div>
+
+<!-- MTN -->
+<div class="op mtn">
+  <h2>🟡 MTN Cameroun <span class="badge">OFFRES</span> <span class="badge promo">PROMO</span></h2>
+  <div class="grid">
+    <div class="card"><span class="best">MEILLEURE OFFRE</span><h3>30 Go</h3><div class="price">2 000 FCFA</div><div class="muted">Valable 30 jours</div><div class="cta"><a class="btn" href="https://wa.me/237XXXXXXXX?text=Bonjour%20je%20veux%20le%20forfait%2030Go%20MTN">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>55 Go</h3><div class="price">3 500 FCFA</div><div class="muted">Valable 2 mois</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%2055Go%20MTN">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>Illimité 1 mois</h3><div class="price">5 000 FCFA</div><div class="muted">Internet illimité</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%20illimit%C3%A9%201%20mois%20MTN">Activer sur WhatsApp</a></div></div>
+    <div class="card"><h3>Illimité 3 mois</h3><div class="price">12 000 FCFA</div><div class="muted">Internet illimité</div><div class="cta"><a class="btn" href="https://wa.me/237653450232?text=Bonjour%20je%20veux%20le%20forfait%20illimit%C3%A9%203%20mois%20MTN">Activer sur WhatsApp</a></div></div>
+  </div>
+</div>
+
+  </section>
+</main><footer>
+  <p>Paiement accepté : MTN MoMo & Orange Money</p>
+  <p>© 2026 – FastNet Cameroun</p>
+</footer>
+</body>
+</html>de
